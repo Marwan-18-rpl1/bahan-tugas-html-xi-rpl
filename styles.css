@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://astropulse.co/assets/images/gallery01/7421f519_original.jpg?v=a0d46303'); /* Gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    filter: brightness(0.9); /* Sesuaikan kecerahan untuk keterbacaan */
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang formulir semi-transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Atur lebar formulir */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #5739ff;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    color: #000000;
+}
+
+input[type="text"], input[type="radio"], select, textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #17ff70;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
