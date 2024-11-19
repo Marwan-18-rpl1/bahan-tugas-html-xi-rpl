@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #84fab0, #8fd3f4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            font-size: 2.5rem;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .form-subtitle {
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
+    </style>
 </head>
 <body>
-  
+    <div class="form-container">
+        
+        <h1 class="form-title text-center">Buat Account Baru</h1>
+        <h2 class="form-subtitle text-center mb-4">Buat Account Baru
+          Sign Up Form</h2>
+
+        <form action="welcome.html" method="post" class="row g-3">
+            
+            <div class="col-md-6">
+                <label for="first_name" class="form-label">First name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name">
+            </div>
+
+            
+            <div class="col-md-6">
+                <label for="last_name" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="last_name" name="last_name">
+            </div>
+
+            
+            <div class="col-12">
+                <label class="form-label">Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="male" name="gender" value="Male">
+                    <label for="male" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="female" name="gender" value="Female">
+                    <label for="female" class="form-check-label">Female</label>
+                </div>
+            </div>
+
+            
+            <div class="col-12">
+                <label for="nationality" class="form-label">Nationality</label>
+                <select class="form-select" id="nationality" name="nationality">
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Other">English</option>
+                    <option value="Other">Other</option>
+                    
+                </select>
+            </div>
+
+            
+            <div class="col-12">
+                <label class="form-label">Language Spoken</label><br>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="bahasa" name="language" value="Bahasa Indonesia">
+                    <label for="bahasa" class="form-check-label">Bahasa Indonesia</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="english" name="language" value="English">
+                    <label for="english" class="form-check-label">English</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="other" name="language" value="Other">
+                    <label for="other" class="form-check-label">Other</label>
+                </div>
+            </div>
+
+            
+            <div class="col-12">
+                <label for="bio" class="form-label">Bio</label>
+                <textarea id="bio" name="bio" class="form-control" rows="5"></textarea>
+            </div>
+
+            
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
